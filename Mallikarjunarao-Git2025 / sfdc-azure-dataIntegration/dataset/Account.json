@@ -1,0 +1,16 @@
+{
+	"name": "Account",
+	"properties": {
+		"description": "test data",
+		"linkedServiceName": {
+			"referenceName": "Salesforce2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SalesforceObject",
+		"schema": [],
+		"typeProperties": {
+			"objectApiName": "Account"
+		}
+	}
+}
