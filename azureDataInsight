@@ -1,0 +1,43 @@
+"activities":[
+    {
+        "name": "CopyActivityTemplate",
+        "type": "Copy",
+        "inputs": [
+            {
+                "referenceName": "<source dataset name>",
+                "type": "DatasetReference"
+            }
+        ],
+        "outputs": [
+            {
+                "referenceName": "<sink dataset name>",
+                "type": "DatasetReference"
+            }
+        ],
+        "typeProperties": {
+            "source": {
+                "type": "<source type>",
+                <properties>
+            },
+            "sink": {
+                "type": "<sink type>"
+                <properties>
+            },
+            "translator":
+            {
+                "type": "TabularTranslator",
+                "columnMappings": "<column mapping>"
+            },
+            "dataIntegrationUnits": <number>,
+            "parallelCopies": <number>,
+            "enableStaging": true/false,
+            "stagingSettings": {
+                <properties>
+            },
+            "enableSkipIncompatibleRow": true/false,
+            "redirectIncompatibleRowSettings": {
+                <properties>
+            }
+        }
+    }
+]
